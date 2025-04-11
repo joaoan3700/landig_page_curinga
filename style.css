@@ -1,7 +1,9 @@
+/* Definindo a fonte do corpo */
 body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Estilos para botões personalizados */
 .btn-custom {
     width: auto;
     height: auto;
@@ -16,9 +18,10 @@ body {
     font-family: Arial, sans-serif;
     border-radius: 10px;
     border: none;
-    transition: color 5s ease;
+    transition: color 0.5s ease;
 }
 
+/* Estilos específicos para os botões de telefone */
 .btn-telefone {
     color: white;
 }
@@ -27,6 +30,7 @@ body {
     color: #3498db;
 }
 
+/* Estilos específicos para os botões do WhatsApp */
 .btn-whatsapp {
     color: #25d366;
 }
@@ -35,41 +39,42 @@ body {
     color: #128c7e;
 }
 
+/* Estilização dos textos dentro dos botões */
 .content__text p {
     margin: 0;
     line-height: 1.1;
 }
 
-.content__p1 {
+.content__p1, .content__p3 {
     font-size: 18px;
     color: white;
+}
+
+.content__p2, .content__p4 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 3px;
 }
 
 .content__p2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-top: 3px;
     color: #25d366;
 }
 
-.content__p3 {
-    font-size: 18px;
-    margin-top: 3px;
-    color: white;
-}
-
 .content__p4 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-top: 3px;
     color: white;
 }
 
+/* Estilos para o ícone do WhatsApp */
 .whatsapp-icon {
     width: 45px;
-    margin-right: 5px;
+    margin-right: 10px; /* Ajustado o espaçamento entre o ícone e o texto */
 }
 
+.fa-whatsapp-icon {
+    margin-right: 0; /* Ajustado o espaçamento entre o ícone e o texto */
+}
+
+/* Estilos para o carrossel */
 .carousel-item img {
     width: 100%;
     height: auto;
@@ -84,10 +89,12 @@ body {
     max-width: 100%;
 }
 
+/* Cor do fundo do nav */
 .nav-color {
     background-color: black;
 }
 
+/* Estilos de responsividade para telas pequenas */
 @media (max-width: 767.98px) {
     .content__text {
         display: none !important;
@@ -103,15 +110,25 @@ body {
         padding: 10px !important;
         justify-content: center;
     }
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 600 / 400;
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
+    }
 }
 
+/* Estilos para os cards */
 .card {
     border: none;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.5s ease-in-out, border 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
 }
 
 .card img {
@@ -140,12 +157,12 @@ body {
     margin-top: 15px;
 }
 
+/* Estilos para o hover no card */
 .card:hover {
-    border: 1px solid red;
-    box-shadow: 0px 0px 15px 5px rgba(255, 0, 0, 0.5);
     cursor: pointer;
 }
 
+/* Estilos para os botões dentro dos cards */
 .card .btn {
     background-color: #D5B31B;
     color: black;
@@ -157,5 +174,4 @@ body {
 .card .btn:hover {
     background-color: #0da21a;
     color: white;
-    cursor: pointer;
 }
