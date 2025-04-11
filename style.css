@@ -1,0 +1,161 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-custom {
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    border: none;
+    transition: color 5s ease;
+}
+
+.btn-telefone {
+    color: white;
+}
+
+.btn-telefone:hover {
+    color: #3498db;
+}
+
+.btn-whatsapp {
+    color: #25d366;
+}
+
+.btn-whatsapp:hover {
+    color: #128c7e;
+}
+
+.content__text p {
+    margin: 0;
+    line-height: 1.1;
+}
+
+.content__p1 {
+    font-size: 18px;
+    color: white;
+}
+
+.content__p2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 3px;
+    color: #25d366;
+}
+
+.content__p3 {
+    font-size: 18px;
+    margin-top: 3px;
+    color: white;
+}
+
+.content__p4 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 3px;
+    color: white;
+}
+
+.whatsapp-icon {
+    width: 45px;
+    margin-right: 5px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1200 / 365;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.carousel-inner {
+    width: 100%;
+    max-width: 100%;
+}
+
+.nav-color {
+    background-color: black;
+}
+
+@media (max-width: 767.98px) {
+    .content__text {
+        display: none !important;
+    }
+
+    .whatsapp-icon {
+        width: 40px !important;
+        height: 40px !important;
+        margin-right: 0 !important;
+    }
+
+    .btn-custom {
+        padding: 10px !important;
+        justify-content: center;
+    }
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+    background-color: #E41E25;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card-btn {
+    margin-top: 15px;
+}
+
+.card:hover {
+    border: 1px solid red;
+    box-shadow: 0px 0px 15px 5px rgba(255, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.card .btn {
+    background-color: #D5B31B;
+    color: black;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.card .btn:hover {
+    background-color: #0da21a;
+    color: white;
+    cursor: pointer;
+}
